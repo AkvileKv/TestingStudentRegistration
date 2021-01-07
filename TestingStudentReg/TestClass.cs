@@ -67,7 +67,7 @@ namespace TestingStudentReg
         public void RegisterButtonClick_NonEmptySurname_NoRedirect()
         {
             string url = driver.Url;
-            surnameField.SendKeys("Kvietkauskaite");
+            surnameField.SendKeys("Kviet");
             registerButton.Click();
             Assert.AreEqual(url, driver.Url);
         }
